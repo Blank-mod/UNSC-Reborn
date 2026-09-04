@@ -5,7 +5,11 @@
 	# does not error.
 	"masterVersionFile":"https://raw.githubusercontent.com/Blank-mod/UNSC-Reborn/main/UNSC_Reborn.version",
 	"modName":"UNSC Reborn",
-	"modThreadId":"35803",
+	"modThreadId":35803,
+
+	# A directly accessible text file, shown in Version Checker's
+	# changelog panel. Fetched from the online version file.
+	"changelogURL":"https://raw.githubusercontent.com/Blank-mod/UNSC-Reborn/main/changelog.txt",
 	"modVersion":
 	{
 		"major":0,
