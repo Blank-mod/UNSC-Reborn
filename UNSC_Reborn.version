@@ -1,0 +1,15 @@
+{
+	# Version Checker support. masterVersionFile must point at a RAW copy of
+	# this file hosted somewhere stable (GitHub raw / gist raw). Until that
+	# URL is filled in, Version Checker simply reports it cannot check - it
+	# does not error.
+	"masterVersionFile":"https://raw.githubusercontent.com/Blank-mod/UNSC-Reborn/main/UNSC_Reborn.version",
+	"modName":"UNSC Reborn",
+	"modThreadId":"0",
+	"modVersion":
+	{
+		"major":0,
+		"minor":6,
+		"patch":0
+	}
+}
