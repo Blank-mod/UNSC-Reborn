@@ -1,6 +1,39 @@
 UNSC REBORN - CHANGELOG
 ============================================================
 
+v0.6.2 - what the refit screen was showing
+------------------------------------------
+A player went through the fleet one ship at a time and photographed everything that looked wrong. All of it was real, and none of it was visible to any check the mod had.
+  * Every ship has thirty ordnance points spare. Most of the Covenant line spent its entire budget
+    on the stock loadout, and several UNSC hulls were within a point or two, so the player could not
+    change anything without first taking something off. The room is added to the hull rather than
+    taken out of the loadout - trimming guns would have weakened every ship the AI flies, and the
+    point was to give the player somewhere to put their own ideas. Forty-nine hulls
+  * Eighteen ships were carrying a gun on one flank and a bare mount on the other. The Noryang, the
+    Athens, the Thermopylae, the Sahara, the Thanatos, the Halcyon refit, the Cradle, the Orion, the
+    Sloop and eight Covenant hulls. The missing gun goes into the same weapon group as its opposite
+    number so the pair fires together, and where that pushed a loadout over budget the cost came out
+    of vents
+  * Eighty-seven mounts sat off the edge of the hull. Guns bolted to empty space beside the ship -
+    worst on the Valiant, where two mounts had eleven per cent of their footprint on the hull. Each
+    one is nudged to the nearest position that sits properly on the plating, mirrored pairs moving
+    together so the ship stays symmetrical
+  * Eight spinal guns were mounted crooked, the Paris's MAC most obviously. A gun drawn down the
+    ship's axis with no opposite number belongs at dead centre, and these sat up to eight units to
+    one side
+  * The Infinity could not undock. Sixteen stern point-defence guns were added to a loadout that had
+    two points spare, putting her at 509 of 415. Her armament goes back to what it was; the two
+    stern mounts that sat inside her engine block keep their corrected positions
+  * The Charon's hero variant was over budget too, at 62 of 45, and had been since it was written.
+    It is destroyer-sized and pays destroyer prices for hullmods, which was two thirds of its
+    points. Blast doors and reinforced hull go, the missile racks stay, because three of its nine
+    weapons are Archers
+  * Three new checks, because none of the above was catchable before. One reads the sprite under
+    every mount and reports the ones hanging off the edge. One totals every loadout against its
+    hull's budget - weapons, wings, flux and hullmods - and refuses anything the game would show in
+    red. One confirms a ship collides with the shape it draws, which caught the Constructor
+    colliding with empty space thirty-seven units aft of her hull
+
 v0.6.1 - reported faults
 ------------------------
 No new content. Everything here is something that was already in 0.6 and was wrong.
