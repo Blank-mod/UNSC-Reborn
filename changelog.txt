@@ -1,6 +1,48 @@
 UNSC REBORN - CHANGELOG
 ============================================================
 
+v0.6.1 - reported faults
+------------------------
+No new content. Everything here is something that was already in 0.6 and was wrong.
+  * Covenant fighters shoot back. Their guns were declared on the hull instead of on the wing, which
+    is a gun the wing never fires - the same fault the UNSC fighters had before 0.4, never fixed on
+    the other side. Seraphs, Banshees, Phantoms and Spirits have been flying unarmed. Reported by
+    Goblind
+  * Carriers keep launching. Nineteen Covenant hulls carried wings on zero launch bays, so the first
+    sortie went out and nothing replaced it. The engine drops a wing with nowhere to launch from
+    without saying so
+  * Prize crews hand you the ship you boarded. Every captured modded hull was arriving as a Nebula
+    transport. The code asked the engine to build a ship from the captured variant inside a
+    try/catch, on the assumption that an id it cannot resolve throws - it does not, it quietly
+    returns a default hull, so the catch never fired and the fallback was never reached. The id is
+    resolved before use now, and the ship that comes back is checked against the ship that was
+    taken. Reported by DaLintyGuy
+  * Covenant ports sell Covenant weapons. A 0.5 rule aimed at spinal guns drawn into the hull art
+    caught the entire faction, so Reverence stocked nothing while Covenant hulls carried four
+    hundred and fifty-eight fittable slots between them. The seven turret-scale energy weapons are
+    purchasable. The spinal and capital guns stay locked, and no Covenant hull has a free large slot
+    for one anyway. Reported by Goblind
+  * The Independents trade with the Covenant again. A Nexerelin faction config had undone the 0.5.2
+    fix and put them back to hostile, which starved Covenant markets of everything they do not make
+    themselves. Raised by cvandem
+  * The quiet one at the end of the bar. Buying that drink left the option sitting there and then
+    produced "no rule found for option barLeave" on the way out. A bar scene that ends without
+    offering anything never hands control back to the bar, so the bar never learns the conversation
+    happened. Eight scenes across the ONI cell contact and the surplus yard were ending that way
+  * Guns are the size they are in lore. Every deck gun was drawn at whatever size the sprite
+    happened to be, which is how a single turret ended up a tenth of the length of the ship carrying
+    it. Forty sprites redrawn to scale and every muzzle offset moved to match. The Sabre's
+    autocannon was also borrowing vanilla's art outright and now has its own
+  * Forty-five mounts across twenty-one hulls were inside their own engine blocks, which is where
+    the missile launchers in the Thanatos's exhaust came from. The Tours had all four engines on one
+    flank. The Eion's aft turret was mounted facing sideways. The Constructor's sprite had a two-
+    pixel spike hanging forty rows off her stern, and her collision outline traced it, so she was
+    colliding with - and taking hits on - empty space almost half her own length aft
+  * Two Covenant guns fired the wrong kind of projectile and the Infinity's sixteen stern point-
+    defence mounts were left empty, so the largest ship in the mod had nothing covering her back
+  * Version Checker is wired up - the master file the 0.6 build shipped with still had the
+    placeholder URL in it
+
 v0.6 - "It Was Locked for a Reason"
 -----------------------------------
 "You do not post four hundred warriors on the inside of a door you intend to open."
